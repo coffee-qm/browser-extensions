@@ -93,7 +93,7 @@
         },
         error: function (err) {
           console.error(err);
-        }
+        },
       });
     }
     console.info("Export rows count:" + (_data.length - 1));
