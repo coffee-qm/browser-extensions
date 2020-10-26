@@ -1,4 +1,4 @@
-# Batch rest export
+# Batch Query Export
 
 ## 功能简介
 

@@ -17,7 +17,7 @@
 
     label {
       display: inline-block;
-      width: 5em;
+      width: 15em;
     }
     div {
       margin-top: 5px;
@@ -36,7 +36,7 @@
   <div id="popup-content">
     <div class="title">查询条件配置</div>
     <div>
-      <label for="query_param">手机号码:</label>
+      <label for="query_param">手机号码 (逗号分隔):</label>
       <textarea id="query_param" rows="6" cols="50"></textarea>
     </div>
     <div class="title">导出文件配置</div>
@@ -45,7 +45,7 @@
       <input type="text" id="export_name" value="Result" />
     </div>
     <div>
-      <label for="export_heads">列名:</label>
+      <label for="export_heads">列名 (逗号分隔):</label>
       <input type="text" id="export_heads" value="Seq,Tel,Res" />
     </div>
     <div class="button beast">查询&导出</div>
