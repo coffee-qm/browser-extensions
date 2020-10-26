@@ -1,0 +1,35 @@
+{
+
+  "description": "导入文件，发起请求，导出结果",
+  "manifest_version": 2,
+  "name": "BatchQueryExport",
+  "version": "1.0",
+  "homepage_url": "https://github.com/coffee-qm/browser-extensions",
+  "icons": {
+    "48": "icons/icon_48.png"
+  },
+
+  "permissions": [
+    "activeTab", "webRequest"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/icon_32.png",
+    "theme_icons": [{
+        "light": "icons/icon_32.png",
+        "dark": "icons/icon_32.png",
+        "size": 32
+    }],
+    "default_title": "Batch Query Export",
+    "default_popup": "popup/choose_beast.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["plugins/jquery/core/1.8.0/jquery-1.8.0.min.js", "plugins/sheetsjs/xlsx.full.min.js"]
+    }
+  ],
+
+  "web_accessible_resources": []
+}

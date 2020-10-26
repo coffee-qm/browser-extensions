@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../plugins/jquery/jquery-ui/1.12.1/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="../plugins/jquery/jquery-ui/1.12.1/jquery-ui.theme.min.css">
+  <script type="text/javascript" src="../plugins/jquery/core/1.8.0/jquery-1.8.0.min.js"></script>
+  <script type="text/javascript" src="../plugins/jquery/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="choose_beast.css" />
+  <style>
+    input {
+      height: 28px;
+      width: 492px;
+    }
+
+    label {
+      display: inline-block;
+      width: 5em;
+    }
+    div {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="popup-content">
+    <div class="title">查询条件配置</div>
+    <div>
+      <label for="query_param">手机号码:</label>
+      <textarea id="query_param" rows="6" cols="50"></textarea>
+    </div>
+    <div class="title">导出文件配置</div>
+    <div>
+      <label for="export_name">文件名:</label>
+      <input type="text" id="export_name" value="Result" />
+    </div>
+    <div>
+      <label for="export_heads">列名:</label>
+      <input type="text" id="export_heads" value="Seq,Tel,Res" />
+    </div>
+    <div class="button beast">查询&导出</div>
+  </div>
+  <div id="error-content" class="hidden">
+    <p>Can't beastify this web page.</p>
+    <p>Try a different page.</p>
+  </div>
+  <script src="choose_beast.js"></script>
+</body>
+<script>
+</script>
+
+</html>
